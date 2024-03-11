@@ -411,7 +411,7 @@ input.onButtonPressed(Button.B, function () {
     globalCurrentShape = processInput(InputType.B, globalGamePlotArray, globalCurrentShape)
 })
 
-input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+input.onButtonPressed(Button.AB, function () {
     if (control.millis() - gameStartTime < startingTime) {
         return
     }
