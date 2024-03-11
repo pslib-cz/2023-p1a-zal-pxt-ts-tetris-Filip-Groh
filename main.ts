@@ -6,6 +6,7 @@ const scoreTable = {
     two: 15,
     three: 25
 }
+
 const dropTimeTable = {
     under40: 2000,
     under80: 1200,
@@ -337,7 +338,7 @@ basic.forever(function () {
             break
         }
         case State.Lost: {
-            basic.showIcon(IconNames.Sad)
+            display(plotShape(globalGamePlotArray, globalCurrentShape))
             break
         }
         case State.ScoreWin: {
